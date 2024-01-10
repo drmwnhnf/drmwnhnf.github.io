@@ -1,0 +1,88 @@
+body {
+    margin: 0px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 8vh;
+    background-color: #041562;
+    position: fixed;
+    width: 100vw;
+}
+
+.navbar a {
+    margin: 0px 3vh;
+    font-family: Arial;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    color: #ddd;
+}
+
+#home {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.name {
+    font-family: Arial;
+    font-size: 60px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-style: italic;
+    text-shadow: #041562 1px 1px 3px;
+    color: #041562;
+    margin: 0px
+}
+
+.isa {
+    font-family: Arial;
+    font-size: 30px;
+    color: #DA1212;
+    margin: 25px 0px;
+}
+
+.socials {
+    display: flex;
+    width: 16vh;
+    justify-content: space-between;
+}
+
+.socials img {
+    height: 4vh;
+    width: 4vh;
+}
+
+.sneakpeek {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sneakpeek p {
+    font-family: Arial;
+    color: #041562;
+    font-weight: bold;
+    margin: 5px 0px;
+    text-decoration: underline;
+}
+
+.sneakpeekimg {
+    height: 64vh;
+    width: 36vh;
+    background-color: #ddd;
+}
+
+#about {
+    height: 100vh;
+    background-color: #041562;
+}
