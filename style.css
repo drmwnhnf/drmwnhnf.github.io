@@ -62,13 +62,13 @@ body {
     width: 4vh;
 }
 
-.sneakpeek {
+#sneakpeek {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.sneakpeek p {
+#sneakpeek p {
     font-family: Arial;
     color: #041562;
     font-weight: bold;

@@ -1,14 +1,30 @@
 const textElement = document.getElementById('desc');
 const textsToAnimate = [
   'full-stack developer',
-  'ui/ux designer',
-  'social media designer',
-  'computer engineer'
+  'graphic designer',
+  'videographer',
+  'computer engineer',
+  'goofy ahh'
 ];
 let currentTextIndex = 0;
 const typingSpeed = 100; // in milliseconds
 const deletionSpeed = 50; // in milliseconds
 const pauseBetweenActions = 1500; // in milliseconds
+
+function hideElementOnNarrowViewport() {
+    const element = document.getElementById('sneakpeek');
+    const viewportWidth = window.innerWidth;
+
+    // Adjust the width threshold as needed
+    const thresholdWidth = 800;
+
+    // Check if the viewport width is less than or equal to the threshold
+    if (viewportWidth <= thresholdWidth) {
+        element.style.display = 'none';
+    } else {
+        element.style.display = 'block'; // or 'inline' or 'inline-block' depending on your element type
+    }
+}
 
 function typeText() {
   let i = 0;
@@ -44,5 +60,6 @@ function deleteText() {
   }, deletionSpeed);
 }
 
-// Start the animation
-typeText()
+typeText();
+hideElementOnNarrowViewport();
+window.addEventListener('resize', hideElementOnNarrowViewport);
