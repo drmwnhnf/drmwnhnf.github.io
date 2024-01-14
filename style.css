@@ -68,12 +68,17 @@ body {
     align-items: center;
 }
 
-#sneakpeek p {
+.sneakpeektxt {
+    display: block;
     font-family: Arial;
     color: #041562;
     font-weight: bold;
     margin: 5px 0px;
     text-decoration: underline;
+}
+
+.sneakpeektxt:hover {
+    color: #435089;
 }
 
 .sneakpeekimg {
